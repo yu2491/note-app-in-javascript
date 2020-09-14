@@ -26,18 +26,9 @@
     assert(1 !== 1);
   })
 
-  it('testCircleRadiusDefaultsTo10', function() {
-    var circle = new Circle();
-    assert(circle.radius === 10);
+  it('return the note text', function() {
+    var note = new Note('text');
+    assert(note.getNote() === 'text')
   })
-
-  // (function(exports) {
-  //   function testCircleRadiusDefaultsTo10() {
-  //     var circle = new Circle();
-  //     assert.isTrue(circle.radius === 10);
-  //   };
-  //
-  //   testCircleRadiusDefaultsTo10();
-  // })(this);
 
 })(this);

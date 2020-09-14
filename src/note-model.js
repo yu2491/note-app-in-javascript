@@ -1,7 +1,12 @@
 'use strict'
 
-class Circle {
-  constructor() {
-    this.radius = 10;
+class Note {
+
+  constructor(text) {
+    this.text = text;
+  }
+
+  getNote() {
+    return this.text;
   }
 }
