@@ -10,15 +10,3 @@ class Note {
     return this.text;
   }
 }
-
-
-class noteList {
-
-  // constructor() {
-  // }
-
-  notes(text) {
-    return [text];
-  }
-
-};

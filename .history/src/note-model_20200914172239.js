@@ -14,11 +14,11 @@ class Note {
 
 class noteList {
 
-  // constructor() {
-  // }
+  constructor() {
+  }
 
-  notes(text) {
-    return [text];
+  notes() {
+    return []
   }
 
 };

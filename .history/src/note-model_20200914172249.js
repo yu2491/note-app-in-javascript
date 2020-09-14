@@ -17,8 +17,8 @@ class noteList {
   // constructor() {
   // }
 
-  notes(text) {
-    return [text];
+  notes() {
+    return [];
   }
 
 };

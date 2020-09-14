@@ -14,11 +14,12 @@ class Note {
 
 class noteList {
 
-  // constructor() {
-  // }
+  constructor() {
+    this.notes = ['text'];
+  }
 
-  notes(text) {
-    return [text];
+  notes() {
+    return []
   }
 
 };
