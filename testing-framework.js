@@ -15,8 +15,8 @@ var expect = {
         console.log('\x1b[32m%s\x1b[0m', 'Test Passed \u2714 ');
       } else {
         console.log('\x1b[31m%s\x1b[0m', 'Test Failed \u2718 ');
-        console.log(`expected: ${expected}`)
-        console.log(`got: ${actual}`)
+        console.log('\x1b[31m%s\x1b[0m', 'expected: ' + expected)
+        console.log('\x1b[31m%s\x1b[0m', 'got: ' + actual)
       }
   }
 };
