@@ -21,5 +21,12 @@
     expect.toEqual(noteListView.getHTML(),"<ul><li>Hello</li><li>Goodbye</li></ul>");
   });
 
+  test.that('it only returns 20 first characters', function() {
+    var noteList = new NoteList();
+    noteList.createNote('Hello this is a long note right here');
+    var noteListView = new NoteListView(noteList);
+    expect.toEqual(noteListView.getHTML(),"<ul><li>Hello this is a long</li></ul>");
+  });
+
 
 })(this);
