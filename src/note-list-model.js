@@ -14,4 +14,8 @@ class NoteList {
     return this.notes;
   }
 
+  getNoteByID(id) {
+    return this.notes[id]
+  }
+
 }
