@@ -1,9 +1,13 @@
 class SingleNoteView {
   constructor(noteModel) {
-    this.noteModel = noteModel.getNote()
+    this.noteModel = noteModel
   }
 
   html() {
-    return `<div>${this.noteModel}</div>`
+    return `<div>${this.noteModel.getNote()}</div>`
+  }
+
+  url() {
+    return `notes/${this.noteModel.id}`
   }
 }

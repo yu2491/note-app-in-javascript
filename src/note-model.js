@@ -2,8 +2,9 @@
 
 class Note {
 
-  constructor(text) {
+  constructor(id, text) {
     this.text = text;
+    this.id = id;
   }
 
   getNote() {

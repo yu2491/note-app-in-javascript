@@ -7,10 +7,12 @@ class NoteListView {
   }
 
   getHTML() {
-    var htmlStart = "<ul><li>"
-    var notes = this.noteList.getNotes().map(note => { return note.getNote().slice(0,20) })
-    var htmlString = htmlStart + notes.join('</li><li>')
-    return htmlString + "</li></ul>"
+    var htmlStart = "<ul>"
+    var htmlEnd = "</ul>"
+    var notes = this.noteList.getNotes().map(note => {
+      return `<li><a id="note-${note.id}" href="#note-${note.id}">${note.getNote().slice(0,20)}</a></li>`})
+    var htmlString = notes.join('')
+    return `${htmlStart}${htmlString}${htmlEnd}`
   }
 
 }

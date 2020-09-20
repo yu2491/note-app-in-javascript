@@ -12,9 +12,9 @@ var test = {
 var expect = {
   toEqual: function(actual,expected) {
       if(actual === expected) {
-        console.log('\x1b[32m%s\x1b[0m', 'Test Passed \u2714 ');
+        console.log('\x1b[32m%s\x1b[0m', 'Test Passed \u2705 ');
       } else {
-        console.log('\x1b[31m%s\x1b[0m', 'Test Failed \u2718 ');
+        console.log('\x1b[31m%s\x1b[0m', 'Test Failed \u274C ');
         console.log('\x1b[31m%s\x1b[0m', 'expected: ' + expected)
         console.log('\x1b[31m%s\x1b[0m', 'got: ' + actual)
       }
